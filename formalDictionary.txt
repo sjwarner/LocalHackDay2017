@@ -1,0 +1,3 @@
+hi,hello
+cheers,thank you
+bye,goodbye
