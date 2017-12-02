@@ -14,11 +14,15 @@ def main():
     else:
         mode = sys.argv[1]
         file = open(sys.argv[2], "r")
+        
         inText = file.read()
+        
+        outFile = open("translatedEmail.txt", "w")
+
         if mode == 'formal':
-            print(formal(inText))
+            outFile.write(formal(inText))
         elif mode == 'informal':
-            print(informal(inText))
+            outFile.write(informal(inText))
         else:
             raise ValueError('Invalid mode type')
 
